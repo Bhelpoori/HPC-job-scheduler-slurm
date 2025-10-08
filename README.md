@@ -242,7 +242,7 @@ squeue -j <jobid> -o "%.18i %.9P %.8j %.8u %.2t %.10M %.6D %R"
 ## 10. Additional Resources
 	•	SLURM Documentation: https://slurm.schedmd.com/documentation.html
 	•	SLURM Quick Start Guide: https://slurm.schedmd.com/quickstart.html
-	•	Cluster Administrator Contact: [Add your admin email or Slack channel]
+	•	Cluster Administrator Contact: abhilashdasari.10@gmail.com  +91-8688964492 (whatsapp)
 
 ---
 Maintained by [Abhilash Dasari] – Updated [8th October 2025]
