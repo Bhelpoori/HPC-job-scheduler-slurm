@@ -195,45 +195,47 @@ sacct -u $USER
 ---
 
 ## 8. Example: Job Lifecycle Workflow
-	1.	Check available partitions and resources
+
+1.	Check available partitions and resources
 ```
 sinfo
 ```
 
-	2.	Submit a job
+2.	Submit a job
 ```
 sbatch my_job.slurm
 ```
 
-	3.	Monitor job status
+3.	Monitor job status
 ```
 squeue -u $USER
 ```
 
-	4.	Inspect running job
+4.	Inspect running job
 ```
 scontrol show job <jobid>
 ```
 
-	5.	Cancel or adjust job if needed
+5.	Cancel or adjust job if needed
 ```
 scancel <jobid>
 ```
 
-	6.	After completion, check efficiency
+6.	After completion, check efficiency
 ```
 seff <jobid>
 ```
-
-
 ---
 
 ## 9. Troubleshooting
 	•	Job stuck in PD (Pending):
-Run squeue -j <jobid> -o "%.18i %.9P %.8j %.8u %.2t %.10M %.6D %R" to check the reason.
-	•	Job fails immediately: Check error_%j.log for details.
-	•	Memory limit exceeded: Increase --mem in your script.
-	•	Job exceeds wall time: Extend --time or optimize code.
+Run to check the reason.
+```
+squeue -j <jobid> -o "%.18i %.9P %.8j %.8u %.2t %.10M %.6D %R"
+```
+	•	Job fails immediately: `Check error_%j.log` for details.
+	•	Memory limit exceeded: Increase `--mem` in your script.
+	•	Job exceeds wall time: Extend `--time` or optimize code.
 
 ---
 
@@ -242,16 +244,6 @@ Run squeue -j <jobid> -o "%.18i %.9P %.8j %.8u %.2t %.10M %.6D %R" to check the 
 	•	SLURM Quick Start Guide: https://slurm.schedmd.com/quickstart.html
 	•	Cluster Administrator Contact: [Add your admin email or Slack channel]
 
-⸻
-
-Maintained by [Your Team Name] – Updated [October 2025]
-
 ---
-
-> For access to all my prompts, get my Prompt Codex here: \
-> 👉  Volume I: [Foundations of AI Dialogue and Cognitive Design](https://buymeacoffee.com/Marino25/e/398926)  
-> 👉  Volume II: [Systems, Strategy & Specialized Agents](https://buymeacoffee.com/marino25/e/407285)  
-> 👉  Volume III: [Deep Cognitive Interfaces and Transformational Prompts](https://buymeacoffee.com/marino25/e/408565)  
-> 👉  Volume IV: [Agentic Archetypes and Transformative Systems](https://buymeacoffee.com/marino25/e/425929)  
-> or, if you found this GPT useful, consider buying me a coffee here: 👉  [buymeacoffee.com/marino25](https://buymeacoffee.com/marino25)  
-> Your support helps me keep building and sharing.
+Maintained by [Abhilash Dasari] – Updated [8th October 2025]
+---
