@@ -16,16 +16,18 @@ sbatch job.slurm
 Example job.slurm file:
 ```bash
 #!/bin/bash
-#SBATCH --job-name=test_job
-#SBATCH --output=output_%j.log
-#SBATCH --error=error_%j.log
-#SBATCH --time=02:00:00
+#SBATCH --job-name=myjob
 #SBATCH --nodes=1
-#SBATCH --ntasks=4
-#SBATCH --mem=8G
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=10G
+#SBATCH --time=02:00:00
+#SBATCH --output=slurm-%j.out
 
-module load python/3.10
-python my_script.py
+# your commands below
+module load R/4.5.1
+Rscript myscript.R
+
 ```
 
 b. Interactive Job
