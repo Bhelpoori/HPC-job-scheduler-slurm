@@ -261,5 +261,6 @@ scontrol update node=node1,node2,node3,gpunode1 state=resume
 
 ---
 Maintained by [Abhilash Dasari] – Updated [8th October 2025]
+
 Maintained by [Pallavi Gupta]
 ---
