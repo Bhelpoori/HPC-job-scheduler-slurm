@@ -246,4 +246,5 @@ squeue -j <jobid> -o "%.18i %.9P %.8j %.8u %.2t %.10M %.6D %R"
 
 ---
 Maintained by [Abhilash Dasari] – Updated [8th October 2025]
+Maintained by [Pallavi Gupta]
 ---
