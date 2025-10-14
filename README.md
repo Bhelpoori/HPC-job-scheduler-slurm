@@ -74,6 +74,7 @@ b. Cancel All Your Jobs
 ```
 scancel -u $USER
 ```
+
 c. Hold/Release a Job
 ```
 scontrol hold <jobid>
@@ -172,12 +173,15 @@ View partitions
 ```
 sinfo
 ```
+
 Cancel job	
 ```
 scancel <jobid>
 ```
+
 Hold/Release job	
-```scontrol hold/release <jobid>
+```
+scontrol hold/release <jobid>
 ```
 View job details	
 ```
