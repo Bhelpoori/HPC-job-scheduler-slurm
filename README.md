@@ -17,6 +17,7 @@ Example job.slurm file:
 ```bash
 #!/bin/bash
 #SBATCH --job-name=myjob
+#SBATCH --partition=cpu     # or gpu
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
@@ -34,7 +35,7 @@ b. Interactive Job
 
 To get an interactive session on a compute node:
 ```
-srun --time=01:00:00 --ntasks=1 --mem=4G --pty bash
+srun --partition=cpu --nodes=1 --ntasks=1 --cpus-per-task=2 --mem=4G --time=01:00:00 --pty bash
 ```
 
 ---
@@ -103,7 +104,12 @@ d. Available Resources by Partition
 ```
 sinfo -o "%P %a %l %D %C"
 ```
-e. View Resource Utilization by User
+e. Available Resources by Nodes
+```
+sinfo -o "%n %C %e"
+```
+
+f. View Resource Utilization by User
 
 If accounting is enabled:
 ```
