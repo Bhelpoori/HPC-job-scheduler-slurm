@@ -241,6 +241,11 @@ squeue -j <jobid> -o "%.18i %.9P %.8j %.8u %.2t %.10M %.6D %R"
 	•	Memory limit exceeded: Increase `--mem` in your script.
 	•	Job exceeds wall time: Extend `--time` or optimize code.
 
+If any job enters into drain or down or any other state, root user should use this command to revive the nodes
+```
+scontrol update node=node1,node2,node3,gpunode1 state=resume
+```
+
 ---
 
 ## 10. Additional Resources
